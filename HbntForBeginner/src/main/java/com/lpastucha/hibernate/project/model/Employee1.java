@@ -29,7 +29,7 @@ public class Employee1 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID", nullable = false, unique = true, length = 11)
-	private long id;
+	private int id;
 
 	@Column(name = "NAME", length = 20, nullable = true)
 	private String name;
@@ -43,14 +43,14 @@ public class Employee1 {
 	/**
 	 * @return the id
 	 */
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -94,6 +94,16 @@ public class Employee1 {
 	 */
 	public void setInsertDate(Date insertDate) {
 		this.insertDate = insertDate;
+	}
+
+	@Override
+	public String toString() {
+		return new StringBuilder("USER: [\n")
+				.append("ID: ").append(id)
+				.append("Name: ").append(name)
+				.append("\nROLE: ").append(role)
+				.append("\nDate: ").append(insertDate)
+				.append("\n]").toString();
 	}
 
 }

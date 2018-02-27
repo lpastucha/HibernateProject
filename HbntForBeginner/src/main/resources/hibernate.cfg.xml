@@ -7,7 +7,7 @@
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/hibernate_project</property>
 		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.connection.password">lauraifilon</property>
+		<property name="hibernate.connection.password">lauraifilon4113</property>
 		<!-- Connection Pool Size -->
 		<property name="hibernate.connection.pool_size">1</property>
 
@@ -18,7 +18,7 @@
 		<property name="hibernate.show_sql">true</property>
 
 		<!-- Dialect is required to let Hibernate know the Database Type, MySQL, 
-			Oracle etc Hibernate 4 automatically figure out Dialect from Database Connection 
+			Oracle etc Hibernate  automatically figure out Dialect from Database Connection 
 			Metadata -->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
